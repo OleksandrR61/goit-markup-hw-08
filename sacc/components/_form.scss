@@ -115,6 +115,8 @@
     }
 
     &__icon-checkbox{
+        flex-shrink: 0;
+
         .form__input-checkbox:checked~& {
             display: none;
         }
@@ -130,6 +132,8 @@
 
     &__icon-checkbox-check {
         display: none;
+
+        flex-shrink: 0;
 
         .form__input-checkbox:checked~& {
             display: block;
