@@ -1,0 +1,63 @@
+// Секция особенностей
+.benefit {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        flex-basis: 100%;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 90px) / 4);
+        }
+    }
+    
+    &__div {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+        border-radius: 4px;
+        
+        background-color: var(--color-background-team);
+
+        &--positioning {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        
+        &--positioning {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+                text-align: left;
+            }
+
+        &--positioning {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}

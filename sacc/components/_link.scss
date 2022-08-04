@@ -1,0 +1,15 @@
+// Стили ссылок
+.link {
+    display: block;
+
+    color: var(--color-link);
+
+    text-decoration: none;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--color-link-hover);
+    }
+}

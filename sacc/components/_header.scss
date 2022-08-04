@@ -1,0 +1,119 @@
+// Шапка страницы
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+
+    border-bottom: 1px solid var(--color-border-header);
+
+    &__button-mobile-menu {
+        min-width: 40px;
+        min-height: 40px;
+
+        background-color: transparent;
+
+        color: var(--color-text-button-modal);
+        
+        transition: color var(--transition-duration) var(--transition-timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--color-background-button-example-hover);
+        }
+
+        &--close {
+            position: absolute;
+            
+            top: 10px;
+            right: 15px;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__contact-thumb {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        
+        letter-spacing: 0.02em;
+
+        color: var(--color-link-contact-header);
+
+        font-size: 12px;
+        line-height: 1.17;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
+        &--positioning:not(:last-child) {
+            @media screen and (max-width: 1199px) {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 30px;
+            }
+        }
+    }
+    
+    &__icon {
+        fill: var(--color-icon-header);
+        
+        transition: fill var(--transition-duration) var(--transition-timing-function);
+
+        .link:hover &,
+        .link:focus &,
+        .link:visited & {
+            fill: currentColor;
+        }
+
+        &--positioning {
+            margin-right: 8px;
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        
+        height: 60px;
+
+        @media screen and (min-width: 768px) {
+            height: 80px;         
+        }
+    }
+
+    &__logo {
+        &--positioning {
+            margin-right: auto;
+
+            @media screen and (min-width: 768px) {
+                margin-right: 87px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 92px;
+            }
+        }
+    }
+}

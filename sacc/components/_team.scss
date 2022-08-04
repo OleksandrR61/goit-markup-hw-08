@@ -1,0 +1,12 @@
+.team {
+    line-height: 1.19;
+    text-align: center;
+
+    background-color: var(--color-background-team);
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }    
+}

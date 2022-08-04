@@ -1,0 +1,33 @@
+// Адрессный блок
+.address {
+    color: var(--color-text-address);
+
+    font-style: normal;
+
+    &--positioning {
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+            margin-right: 165px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
+    }
+
+    &__item {
+        &--positioning {
+            margin-bottom: 8px;
+
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 9px;
+            }
+        }
+    }
+
+    &__contact {
+        color: var(--color-link-contact-footer);
+    }
+}

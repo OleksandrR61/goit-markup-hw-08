@@ -1,0 +1,49 @@
+// Футер страницы
+.footer {
+    padding: 60px 0px;
+
+    background-color: var(--color-background-secondary);
+
+    font-size: 14px;
+    line-height: 1.714;
+
+    &--gap {
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 61px;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-right: auto;
+        }
+    }
+    
+    &__body {
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--color-text-address);
+
+        &--positioning {
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                margin-top: 5px;                
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+// Список соцсетей
+.contact-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        &--positioning:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+
+        color: var(--color-icon-link);
+            
+        transition: color var(--transition-duration) var(--transition-timing-function),
+                    background-color var(--transition-duration) var(--transition-timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--color-icon-link-hover);
+            background-color: var(--color-link-hover);
+        }
+
+        &--dark-background {
+            color: var(--color-icon-link-footer);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}

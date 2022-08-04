@@ -1,0 +1,76 @@
+// Подписаться
+.form-subscribe {
+    &__container {
+        display: flex;
+    }
+
+    &__label {
+        font-size: 12px;
+        line-height: 1.167;
+        letter-spacing: 0.01em;
+    }
+    
+    &__input {
+        padding: 15px 16px;
+        
+        width: 100%;
+        height: 50px;
+        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+        
+        background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+        
+        &--positioning {
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 0px;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        
+        justify-content: center;
+        align-items: center;
+        
+        letter-spacing: 0.06em;
+    }
+
+    &__icon {
+        vertical-align: middle;
+
+        &--positioning {
+            margin-left: 12px;
+
+            @media screen and (min-width: 1200px) {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &--positioning {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                margin-left: 151px;
+                margin-right: 137px;
+            }
+    }
+}

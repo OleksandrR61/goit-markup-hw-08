@@ -1,0 +1,8 @@
+// Базовые стили страницы
+body {
+    background-color: var(--color-background-main);
+    color: var(--color-text-main);
+
+    font-family: var(--font-family-main);
+    letter-spacing: 0.03em;
+}
