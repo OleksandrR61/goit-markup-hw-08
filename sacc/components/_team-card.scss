@@ -17,13 +17,16 @@
 
     &__img {
         max-width: 450px;
+        height: auto;
 
         @media screen and (min-width: 768px) {
-            max-width: 354px;
+            width: 354px;
+            height: 374px;
         }
 
         @media screen and (min-width: 1200px) {
-            max-width: 270px;
+            width: 270px;
+            height: 260px;
         }
     }
     
